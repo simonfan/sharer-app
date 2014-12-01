@@ -48,3 +48,16 @@ gulp.task('git-check', function(done) {
   }
   done();
 });
+
+
+
+/**
+ * MOCK API
+ */
+
+gulp.task('api', function () {
+
+  gulp.src('../api/static/**/*.json')
+    .pipe(gulp.dest('./www/api'))
+
+});
